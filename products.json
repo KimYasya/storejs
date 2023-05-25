@@ -1,0 +1,275 @@
+[
+  {
+    "name" : "Сумка через плечо",
+    "price" : 4000,
+    "date" : "30.10.2022",
+    "image" : "bag1.png",
+    "type" : "bags"
+  },
+  {
+    "name" : "Ботинки бордовые",
+    "price" : 1500,
+    "date" : "25.03.2023",
+    "image" : "boots1.png",
+    "type" : "boots"
+  },
+  {
+    "name" : "кроссовки мятные",
+    "price" : 2000,
+    "date" : "21.03.2023",
+    "image" : "boots2.png",
+    "type" : "boots"
+  },
+  {
+    "name" : "сумка клиньями",
+    "price" : 4500,
+    "date" : "31.03.2023",
+    "image" : "bag2.png",
+    "type" : "bags"
+  },
+  {
+    "name" : "сумка бежевая",
+    "price" : 5000,
+    "date" : "15.01.2023",
+    "image" : "bag3.png",
+    "type" : "bags"
+  },
+  {
+    "name" : "сумка разноцветная",
+    "price" : 4000,
+    "date" : "01.03.2023",
+    "image" : "bag4.png",
+    "type" : "bags"
+  },
+  {
+    "name" : "сумка черная мозаика",
+    "price" : 5000,
+    "date" : "01.03.2023",
+    "image" : "bag5.png",
+    "type" : "bags"
+  },
+  {
+    "name" : "кроссовки белые",
+    "price" : 1500,
+    "date" : "01.03.2023",
+    "image" : "boots3.png",
+    "type" : "boots"
+  },
+  {
+    "name" : "костюм черный",
+    "price" : 3000,
+    "date" : "01.03.2023",
+    "image" : "clothes1.png",
+    "type" : "clothes"
+  },
+  {
+    "name" : "сумка черная",
+    "price" : 3000,
+    "date" : "01.03.2023",
+    "image" : "bag6.png",
+    "type" : "bags"
+  },
+  {
+    "name" : "костюм светлый",
+    "price" : 3000,
+    "date" : "01.03.2023",
+    "image" : "clothes2.png",
+    "type" : "clothes"
+  },
+  {
+    "name" : "костюм серый",
+    "price" : 3000,
+    "date" : "01.03.2023",
+    "image" : "clothes3.png",
+    "type" : "clothes"
+  },
+  {
+    "name" : "костюм желтый",
+    "price" : 3500,
+    "date" : "01.03.2023",
+    "image" : "clothes4.png",
+    "type" : "clothes"
+  },
+  {
+    "name" : "костюм лавандовый",
+    "price" : 3500,
+    "date" : "01.03.2023",
+    "image" : "clothes5.png",
+    "type" : "clothes"
+  },
+  {
+    "name" : "костюм зебра",
+    "price" : 4000,
+    "date" : "01.03.2023",
+    "image" : "clothes6.png",
+    "type" : "clothes"
+  },
+  {
+    "name" : "костюм спортивный",
+    "price" : 3600,
+    "date" : "01.03.2023",
+    "image" : "clothes7.png",
+    "type" : "clothes"
+  },
+  {
+    "name" : "костюм яркий",
+    "price" : 3600,
+    "date" : "01.03.2023",
+    "image" : "clothes8.png",
+    "type" : "clothes"
+  },
+  {
+    "name" : "леггнинсы черно-белые",
+    "price" : 1500,
+    "date" : "01.03.2023",
+    "image" : "clothes9.png",
+    "type" : "clothes"
+  },
+  {
+    "name" : "леггинсы с юбкой",
+    "price" : 2000,
+    "date" : "01.03.2023",
+    "image" : "clothes10.png",
+    "type" : "clothes"
+  },
+  {
+    "name" : "костюм с майкой",
+    "price" : 3000,
+    "date" : "01.03.2023",
+    "image" : "clothes11.png",
+    "type" : "clothes"
+  },
+  {
+    "name" : "костюм с юбкой",
+    "price" : 3000,
+    "date" : "01.03.2023",
+    "image" : "clothes12.png",
+    "type" : "clothes"
+  },
+  {
+    "name" : "водолазка",
+    "price" : 1000,
+    "date" : "01.03.2023",
+    "image" : "clothes13.png",
+    "type" : "clothes"
+  },
+  {
+    "name" : "шорты джинсовые",
+    "price" : 3000,
+    "date" : "01.03.2023",
+    "image" : "clothes14.png",
+    "type" : "clothes"
+  },
+  {
+    "name" : "купальник",
+    "price" : 5000,
+    "date" : "01.03.2023",
+    "image" : "clothes15.png",
+    "type" : "clothes"
+  },
+  {
+    "name" : "костюм серый спорт",
+    "price" : 4000,
+    "date" : "01.03.2023",
+    "image" : "clothes16.png",
+    "type" : "clothes"
+  },
+  {
+    "name" : "костюм леопард",
+    "price" : 5000,
+    "date" : "01.03.2023",
+    "image" : "clothes17.png",
+    "type" : "clothes"
+  },
+  {
+    "name" : "сумка мешок белая",
+    "price" : 3000,
+    "date" : "01.03.2023",
+    "image" : "bag7.png",
+    "type" : "bags"
+  },
+  {
+    "name" : "сумка мешок голубая",
+    "price" : 3000,
+    "date" : "01.03.2023",
+    "image" : "bag8.png",
+    "type" : "bags"
+  },
+  {
+    "name" : "сумка кобура",
+    "price" : 5000,
+    "date" : "01.03.2023",
+    "image" : "bag9.png",
+    "type" : "bags"
+  },
+  {
+    "name" : "сумка стеганая",
+    "price" : 4000,
+    "date" : "01.03.2023",
+    "image" : "bag10.png",
+    "type" : "bags"
+  },
+  {
+    "name" : "сумка черная",
+    "price" : 3000,
+    "date" : "01.03.2023",
+    "image" : "bag11.png",
+    "type" : "bags"
+  },
+  {
+    "name" : "сумка бордовая",
+    "price" : 4000,
+    "date" : "01.03.2023",
+    "image" : "bag12.png",
+    "type" : "bags"
+  },
+  {
+    "name" : "мокасины",
+    "price" : 200,
+    "date" : "01.03.2023",
+    "image" : "boots4.png",
+    "type" : "boots"
+  },
+  {
+    "name" : "ботинки белые",
+    "price" : 3500,
+    "date" : "01.03.2023",
+    "image" : "boots5.png",
+    "type" : "boots"
+  },
+  {
+    "name" : "сапоги черные",
+    "price" : 4500,
+    "date" : "01.03.2023",
+    "image" : "boots6.png",
+    "type" : "boots"
+  },
+  {
+    "name" : "сапоги белые",
+    "price" : 5500,
+    "date" : "01.03.2023",
+    "image" : "boots7.png",
+    "type" : "boots"
+  },
+  {
+    "name" : "сапоги резиновые",
+    "price" : 1500,
+    "date" : "01.03.2023",
+    "image" : "boots8.png",
+    "type" : "boots"
+  },
+  {
+    "name" : "кроксы",
+    "price" : 3500,
+    "date" : "01.03.2023",
+    "image" : "boots9.png",
+    "type" : "boots"
+  },
+  {
+    "name" : "шлепанцы",
+    "price" : 1500,
+    "date" : "01.03.2023",
+    "image" : "boots10.png",
+    "type" : "boots"
+  }
+]

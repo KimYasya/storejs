@@ -1,84 +1,95 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" href="/icons/fi-rr-fox.svg" />
-    <title>Мой Маркет</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link href="style.css" rel="stylesheet" />
-  </head>
 
-  <body>
-    <header>
-      <div class="header__block container">
-        <h1>Магазин одежды</h1>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="icon" href="/icons/fi-rr-fox.svg" />
+  <title>Мой Маркет</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+</head>
 
-        <div class="header__menu">
-          <label for="category" class="">Меню</label>
-          <select id="category">
-            <option selected>Все</option>
-            <option>Обувь</option>
-            <option>Одежда</option>
-            <option>Сумки</option>
-          </select>
-        </div>
+<body>
+  <header>
+    <div class="header__block container">
+      <h1>Магазин одежды</h1>
+
+      <div class="header__menu">
+        <label for="category" class="">Меню</label>
+        <select id="category">
+          <option selected>Все</option>
+          <option>Обувь</option>
+          <option>Одежда</option>
+          <option>Сумки</option>
+        </select>
       </div>
-    </header>
 
-    <main class="container">
-      <h2>Обувь</h2>
-      <div id="boots" class="product__section"></div>
+      <div class="switch__theme">
+        <label class="switch">
+          <input type="checkbox" id="checkbox">
+          <span class="slider round"></span>
+        </label>
+        <span class="slider__title">Светлая тема</span>
+      </div>
+    </div>
+  </header>
 
-      <h2>Одежда</h2>
-      <div id="clothes" class="product__section"></div>
+  <main class="container">
+    <h2>Обувь</h2>
+    <div id="boots" class="product__section"></div>
 
-      <h2>Сумки</h2>
-      <div id="bags" class="product__section"></div>
+    <h2>Одежда</h2>
+    <div id="clothes" class="product__section"></div>
 
-      <form id="my_modal" class="modal">
-        <div class="modal_content">
-          <div class="select__amount">
-            <span>Количество</span>
-            <input type="number" step="1" min="1" max="100" id="num_count" name="quantity">
-          </div>
+    <h2>Сумки</h2>
+    <div id="bags" class="product__section"></div>
 
-<div class="selected__color">
-          <span>Выбранный цвет: </span> 
+    <form id="my_modal" class="modal">
+      <div class="modal_content">
+        <div class="select__amount">
+          <span>Количество</span>
+          <input type="number" step="1" min="1" max="100" id="num_count" name="quantity">
+        </div>
+
+        <div class="selected__color">
+          <span>Выбранный цвет: </span>
           <span id="selected__color">...</span>
         </div>
-          <div class="color__choise">
-            <div id="red" class="color__btn red"></div>
-            <div id="black" class="color__btn black"></div>
-            <div id="white" class="color__btn white"></div>
-            <div id="green" class="color__btn green"></div>
-          </div>
-
-          <div class="comments">
-            <span>Комментарии</span>
-            <textarea
-              name="comments"
-              id="buy_comments"
-              maxlength="2000"
-            ></textarea>
-          </div>
-
-          <div class="modal__btns">
-            <button class="order__btn" id="order">Купить</button>
-            <button class="close__modal" id="close">Закрыть</button>
-          </div>
+        <div class="color__choise">
+          <div id="red" class="color__btn red"></div>
+          <div id="black" class="color__btn black"></div>
+          <div id="white" class="color__btn white"></div>
+          <div id="green" class="color__btn green"></div>
         </div>
-      </form>
 
-      <button id="scrollTopButton" class="hidden">Наверх</button>
-    </main>
+        <div class="comments">
+          <span>Комментарии</span>
+          <textarea name="comments" id="buy_comments" maxlength="2000"></textarea>
+        </div>
 
-    <footer></footer>
-    <script async src="script.js"></script>
-  </body>
+        <div class="modal__btns">
+          <button class="order__btn" id="order">Купить</button>
+          <button class="close__modal" id="close">Закрыть</button>
+        </div>
+      </div>
+    </form>
+
+    <button id="scrollTopButton" class="hidden">Наверх</button>
+  </main>
+
+  <footer class="container">
+
+    <ul>
+      <li><a href="#boots">Обувь</a></li>
+      <li><a href="#clothes">Одежда</a></li>
+      <li><a href="#bags">Сумки</a></li>
+    </ul>
+
+  </footer>
+  <script async src="script.js"></script>
+</body>
+
 </html>

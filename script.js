@@ -130,8 +130,10 @@ function initialize(products) {
     const heading = document.createElement("h3");
     const productPrice = document.createElement("p");
     const image = document.createElement("img");
-    const dateAdded = document.createElement("p");
+    const dateAdded = document.createElement("span");
     const buyBtn = document.createElement("button");
+    const groupOne = document.createElement("div");
+    const groupTwo = document.createElement("div");
 
     section.setAttribute("class", product.type);
 
@@ -149,46 +151,65 @@ function initialize(products) {
     image.src = objectURL;
     image.alt = product.name;
     dateAdded.classList.add("section__date");
+    groupOne.classList.add("section__group_one");
+    groupTwo.classList.add("section__group_two");
 
     if (product.type === "boots") {
       bootsSection.appendChild(section);
       section.appendChild(heading);
-      section.appendChild(image);
-      section.appendChild(productPrice);
-      section.appendChild(buyBtn);
-      section.appendChild(dateAdded);
+      section.appendChild(groupOne);
+      groupOne.appendChild(image);
+      groupOne.appendChild(groupTwo);
+      groupTwo.appendChild(productPrice);
+      groupTwo.appendChild(buyBtn);
+      groupTwo.appendChild(dateAdded);
     } else if (product.type === "clothes") {
       clothesSection.appendChild(section);
       section.appendChild(heading);
-      section.appendChild(image);
-      section.appendChild(productPrice);
-      section.appendChild(buyBtn);
-      section.appendChild(dateAdded);
+      section.appendChild(groupOne);
+      groupOne.appendChild(image);
+      groupOne.appendChild(groupTwo);
+      groupTwo.appendChild(productPrice);
+      groupTwo.appendChild(buyBtn);
+      groupTwo.appendChild(dateAdded);
     } else if (product.type === "bags") {
       bagsSection.appendChild(section);
       section.appendChild(heading);
-      section.appendChild(image);
-      section.appendChild(productPrice);
-      section.appendChild(buyBtn);
-      section.appendChild(dateAdded);
+      section.appendChild(groupOne);
+      groupOne.appendChild(image);
+      groupOne.appendChild(groupTwo);
+      groupTwo.appendChild(productPrice);
+      groupTwo.appendChild(buyBtn);
+      groupTwo.appendChild(dateAdded);
     }
 
     /* модальное окно */
     const modal = document.getElementById("my_modal");
-    const close = document.querySelector(".close__modal")[0];
+    const closeBtns = document.querySelectorAll(".close__modal");
     const orderBtn = document.querySelector(".order__btn");
-    const openModal = document.querySelector(".btn")
+    const openModals = document.querySelectorAll(".btn");
 
     // открываем модальное окно
-    openModal.addEventListener("click", function (e) {
-      e.preventDefault();
-      modal.style.display = "block";
-    });
+    openModals.forEach((openModal) =>
+      openModal.addEventListener("click", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        modal.style.display = "block";
+      })
+    );
 
     // отправляем заказ в корзину
-   orderBtn.addEventListener("click", (e) => {
+
+    orderBtn.addEventListener("click", (e) => {
+      orderBtn.id = product.id;
       e.preventDefault();
-      console.log("Товар добавлен в корзину");
+
+      if (+e.currentTarget.id === product.id) {
+        alert(`Товар ${product.name} добавлен в корзину`);
+      }
+      console.log(product.id);
+      console.log(e.currentTarget.id);
+
       modal.style.display = "none";
     });
 
@@ -201,26 +222,51 @@ function initialize(products) {
 
     redBtn.addEventListener("click", function (e) {
       selectedColor.innerHTML = "Красный";
-    })
+    });
 
     blackBtn.addEventListener("click", function (e) {
       selectedColor.innerHTML = "Черный";
-    })
+    });
 
     whiteBtn.addEventListener("click", function (e) {
       selectedColor.innerHTML = "Белый";
-    })
+    });
 
     greenBtn.addEventListener("click", function (e) {
       selectedColor.innerHTML = "Зеленый";
-    })
-
-    // закрываем модальное окно
-    close.addEventListener("click", function (e) {
-      e.preventDefault();
-      modal.style.display = "none";
     });
 
-    
+    // закрываем модальное окно
+    closeBtns.forEach((closeBtn) =>
+      closeBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        modal.style.display = "none";
+      })
+    );
+
+    const productCard = document.querySelector("section");
+
+    if (header.classList.contains("dark")) {
+      console.log("да");
+      productCard.classList.toggle("dark_backgr");
+    }
   }
 }
+
+/* Меняем тему */
+
+const switchTheme = document.getElementById("checkbox");
+const container = document.querySelector("body");
+const header = document.querySelector("header");
+const title = document.querySelector(".slider__title");
+const selectCategory = document.querySelector("select");
+
+switchTheme.addEventListener("click", function () {
+  container.classList.toggle("dark__theme");
+  header.classList.toggle("dark");
+  selectCategory.classList.toggle("dark__backgr");
+
+  if (header.classList.contains("dark")) {
+    title.innerHTML = "Темная тема";
+  } else title.innerHTML = "Светлая тема";
+});
